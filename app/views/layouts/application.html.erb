@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Yelpdemo</title>
+    <% if Rails.env.production? %>
+      <title>Yelpdemo Heroku</title>
+    <% else %>
+      <title>Yelpdemo Local</title>
+    <% end %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
