@@ -30,3 +30,4 @@
 /config/application.yml
 
 public/uploads/tmp/*
+public/uploads/restaurant/image/*
