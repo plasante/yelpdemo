@@ -26,6 +26,7 @@ class ReviewsController < ApplicationController
   # POST /reviews.json
   def create
     @review = Review.new(review_params)
+    puts "user_id = " + current_user.id.to_s
     @review.user_id = current_user.id
 
     respond_to do |format|
