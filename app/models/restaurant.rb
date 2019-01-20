@@ -13,7 +13,7 @@ class Restaurant < ApplicationRecord
       messages: "must start with http:// or https://" 
     }
 
-    validates :address, format: { with: /\A\d+[^,]+,[^,]+, [A-Z]{2} [a-zA-Z0-9 ]{5,7}\z/,
+    validates :address, format: { with: /\A\d+\z/,
       messages: "must be in the format 25 chemin Ste-Marie, Mascouche, PQ, J7J 1M8" 
     }
 end
